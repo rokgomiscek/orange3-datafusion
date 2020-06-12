@@ -426,8 +426,8 @@ class GraphView(QGraphicsView):
         return edge
 
     def wheelEvent(self, event):
-        if event.orientation() != Qt.Vertical: return
-        self.scaleView(2**(event.delta() / 240))
+        if event.angleDelta().x() != 0: return
+        self.scaleView(2**(event.angleDelta().y() / 240))
     def scaleView(self, factor):
         magnitude = self.transform().scale(factor, factor).mapRect(QRectF(0, 0, 1, 1)).width()
         if 0.4 < magnitude < 6:
