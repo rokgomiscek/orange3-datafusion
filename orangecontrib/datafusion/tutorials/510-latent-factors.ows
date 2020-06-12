@@ -5,7 +5,7 @@
 		<node id="1" name="Table to Relation" position="(176.0, 509.0)" project_name="Orange3-Data-Fusion" qualified_name="orangecontrib.datafusion.widgets.owtabletorelation.OWTableToRelation" title="Table to Relation" version="" />
 		<node id="2" name="Fusion Graph" position="(333.0, 509.0)" project_name="Orange3-Data-Fusion" qualified_name="orangecontrib.datafusion.widgets.owfusiongraph.OWFusionGraph" title="Fusion Graph" version="" />
 		<node id="3" name="Latent Factors" position="(627.0, 509.0)" project_name="Orange3-Data-Fusion" qualified_name="orangecontrib.datafusion.widgets.owlatentfactors.OWLatentFactors" title="Latent Factors" version="" />
-		<node id="4" name="GO Browser" position="(1194.0, 705.0)" project_name="Orange-Bioinformatics" qualified_name="orangecontrib.bio.widgets3.OWGOEnrichmentAnalysis.OWGOEnrichmentAnalysis" title="GO Browser" version="" />
+		<node id="4" name="GO Browser" position="(1194.0, 705.0)" project_name="Orange3-Bioinformatics" qualified_name="orangecontrib.bioinformatics.widgets.OWGOBrowser.OWGOBrowser" title="GO Browser" version="" />
 		<node id="5" name="Distances" position="(805.0, 508.0)" project_name="Orange" qualified_name="Orange.widgets.unsupervised.owdistances.OWDistances" title="Distances" version="" />
 		<node id="6" name="Hierarchical Clustering" position="(923.0, 706.0)" project_name="Orange" qualified_name="Orange.widgets.unsupervised.owhierarchicalclustering.OWHierarchicalClustering" title="Hierarchical Clustering" version="" />
 		<node id="7" name="MDS" position="(920.0, 304.0)" project_name="Orange" qualified_name="Orange.widgets.unsupervised.owmds.OWMDS" title="MDS" version="" />
@@ -16,7 +16,7 @@
 		<link enabled="true" id="2" sink_channel="Fitted fusion graph" sink_node_id="3" source_channel="Fitted Fusion Graph" source_node_id="2" />
 		<link enabled="true" id="3" sink_channel="Data" sink_node_id="5" source_channel="Relation" source_node_id="3" />
 		<link enabled="true" id="4" sink_channel="Distances" sink_node_id="6" source_channel="Distances" source_node_id="5" />
-		<link enabled="true" id="5" sink_channel="Cluster Examples" sink_node_id="4" source_channel="Selected Data" source_node_id="6" />
+		<link enabled="true" id="5" sink_channel="Cluster Data" sink_node_id="4" source_channel="Selected Data" source_node_id="6" />
 		<link enabled="true" id="6" sink_channel="Distances" sink_node_id="7" source_channel="Distances" source_node_id="5" />
 	</links>
 	<annotations>
